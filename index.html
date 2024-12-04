@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        //declaro tres variables 
+        let numero1 = 50;
+		let numero2 = 0;
+		let oper = prompt("Digite operacion: suma, resta, multiplicacion, division");
+
+		function calculadora(numero1,numero2,oper){
+
+		if (oper === "suma") {
+			console.log(sumar(numero1, numero2));
+		}
+		else if (oper === "resta"){
+			console.log(restar(numero1, numero2));
+		} 
+		else if (oper === "multiplicacion"){
+			console.log(multiplicar(numero1, numero2))
+		}
+		else if (oper === "division"){
+			if (numero2 === 0)
+				console.log("no se puede dividir entre 0");
+			else{
+				console.log(dividir(numero1, numero2));
+			}
+			
+		}
+		}
+		while(oper !="salir"){
+			oper = prompt("ingresar operaciones");
+		let resultado = calculadora(numero1,numero2,oper);
+		console.log (resultado);
+			
+		}
+
+ 		console.log ("salir de la calculadora")
+		
+    </script>
+    
+</body>
+</html>
